@@ -53,6 +53,18 @@ public class AddTariffTwoDimensional {
 	    wd.findElement(By.id("inter_charges")).sendKeys(data.get(0).get("IPMC"));
 	    wd.findElement(By.id("sms_charges")).sendKeys(data.get(0).get("SPC"));
 	}
+	
+	@When("User enters all the required fields with validcredentialss here.{string},{string},{string},{string},{string},{string},{string}")
+	public void user_enters_all_the_required_fields_with_validcredentialss_here(String MR, String LM, String IM, String SMS, String LPMC, String IPMC, String SPC) {
+		wd.findElement(By.id("rental1")).sendKeys(MR);
+	    wd.findElement(By.id("local_minutes")).sendKeys(LM);
+	    wd.findElement(By.id("inter_minutes")).sendKeys(IM);
+	    wd.findElement(By.id("sms_pack")).sendKeys(SMS);
+	    wd.findElement(By.id("minutes_charges")).sendKeys(LPMC);
+	    wd.findElement(By.id("inter_charges")).sendKeys(IPMC);
+	    wd.findElement(By.id("sms_charges")).sendKeys(SPC);
+	    
+	}
 
 	@When("User clicks on the submit button at the bottom of the page.")
 	public void user_clicks_on_the_submit_button_at_the_bottom_of_the_page() {

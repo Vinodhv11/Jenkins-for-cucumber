@@ -1,7 +1,9 @@
+
 Feature: AddCustomer Flow
 
+@sanity @regression
   Scenario: 
-    Given User should be in the telecom home page
+   # Given User should be in the telecom home page
     And User click on add customer button
     When User enters all the fields with valid data
     And User clicks on submit button

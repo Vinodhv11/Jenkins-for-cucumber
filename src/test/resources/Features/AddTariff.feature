@@ -1,8 +1,9 @@
-
+@smoke
 Feature: AddTariff flow
 
+@sanity @regression
   Scenario: 
-    Given User should be in the demo home page
+   # Given User should be in the demo home page
     And User clicks on add tariff plan button
     When User enters all the required fields with valid credentials
     And User clicks on the submit button at the bottom of the page

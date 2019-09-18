@@ -56,6 +56,19 @@ public class AddCustomerTwoDimensional {
 	
 	}
 
+	@When("User enters all the fields with validdatass.{string},{string},{string},{string},{string}")
+	public void user_enters_all_the_fields_with_validdatass(String fname, String lname, String email, String address, String phno) {
+		WebElement b = wd.findElement(By.xpath("//label[@for='done']"));
+	    b.click();
+	    WebElement c = wd.findElement(By.id("fname"));
+	    c.sendKeys(fname);
+	    wd.findElement(By.id("lname")).sendKeys(lname);
+	    wd.findElement(By.id("email")).sendKeys(email);
+	    wd.findElement(By.name("addr")).sendKeys(address);
+	    wd.findElement(By.id("telephoneno")).sendKeys(phno);
+	}
+	
+	
 	@When("User clicks on submit button.")
 	public void user_clicks_on_submit_button() {
 		    wd.findElement(By.xpath("//input[@type='submit']")).click();

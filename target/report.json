@@ -1,0 +1,212 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10506144900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeBackground()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": "addtariff-flow;",
+        "after": [
+          {
+            "result": {
+              "duration": 659416800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2325904300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on add tariff plan button",
+            "match": {
+              "location": "AddTariffPlan.user_clicks_on_add_tariff_plan_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1201116600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters all the required fields with valid credentials",
+            "match": {
+              "location": "AddTariffPlan.user_enters_all_the_required_fields_with_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 775204600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on the submit button at the bottom of the page",
+            "match": {
+              "location": "AddTariffPlan.user_clicks_on_the_submit_button_at_the_bottom_of_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180553500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Tariff plan is displayed",
+            "match": {
+              "location": "AddTariffPlan.tariff_plan_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "AddTariff flow",
+    "description": "",
+    "id": "addtariff-flow",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/AddTariff.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8656433900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeBackground()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": "addcustomer-flow;",
+        "after": [
+          {
+            "result": {
+              "duration": 664023800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1666881200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on add customer button",
+            "match": {
+              "location": "AddCustomerSteps.user_click_on_add_customer_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1189669800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters all the fields with valid data",
+            "match": {
+              "location": "AddCustomerSteps.user_enters_all_the_fields_with_valid_data()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1157378900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on submit button",
+            "match": {
+              "location": "AddCustomerSteps.user_clicks_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80553400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be displayed and customer id is generated",
+            "match": {
+              "location": "AddCustomerSteps.user_should_be_displayed_and_customer_id_is_generated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "AddCustomer Flow",
+    "description": "",
+    "id": "addcustomer-flow",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/customer.feature",
+    "tags": []
+  }
+]
